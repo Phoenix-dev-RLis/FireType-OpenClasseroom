@@ -1,0 +1,71 @@
+/* Réinitialisation de quelques styles par défaut */
+body, h1, h3, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4e1d2; /* Beige clair pour améliorer le contraste */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Style pour le titre principal */
+h1 {
+    font-size: 2.5em;
+    color: #FF4500; /* Rouge feu */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style pour le sous-titre */
+h3 {
+    font-size: 1.5em;
+    color: #FF6347; /* Rouge tomate */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour les paragraphes */
+p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Style pour le champ de saisie */
+input[type="text"] {
+    width: calc(100% - 20px); /* Largeur du champ moins les marges */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ff5733; /* Rouge clair */
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff5f0; /* Légère teinte pour améliorer le contraste */
+}
+
+/* Style pour le bouton */
+button {
+    background-color: #FF4500; /* Rouge feu */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur au survol du bouton */
+button:hover {
+    background-color: #FF6347; /* Rouge tomate */
+}
+
+/* Style pour les spans affichant le score et les mots à la minute */
+#afficherScore, #MotsAlaMinute {
+    font-weight: bold;
+    color: #FF4500; /* Rouge feu */
+}

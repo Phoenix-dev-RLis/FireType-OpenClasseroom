@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <title>FireType - Améliorez votre vitesse de frappe au clavier</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="FireType est une application interactive qui vous aide à améliorer votre vitesse de frappe au clavier en vous proposant des mots à taper rapidement. Suivez vos progrès et comparez vos performances à la moyenne humaine.">
+            <meta name="keywords" content="FireType, vitesse de frappe, dactylographie, jeu de frappe, améliorer vitesse clavier, taper plus vite, mots à la minute, score de frappe, entraînement clavier">
+            <meta name="robots" content="index, follow">
+            <meta name="author" content="Lucas Rigo">
+            <link rel="stylesheet" href="style.css">
+            <link rel="icon" href="favicon.ico" type="image/x-icon">
+            <meta property="og:title" content="FireType - Améliorez votre vitesse de frappe">
+            <meta property="og:description" content="Défiez-vous avec FireType et améliorez vos performances de frappe au clavier. Suivez votre score, votre vitesse et comparez-vous à la moyenne humaine.">
+            <meta property="og:url" content="https://tonsite.com">
+            <meta property="og:type" content="website">
+        </head>
+        
+    </head>
+    <body>
+        <h1>FireType</h1>
+        <h3>L'application pour écrire plus vite !!</h3>
+
+        <p> <span id="afficherMotATrouver">Mot à écrire :</span></p>
+
+        <input type="text" id="input" placeholder="Entrez le mot" minlength="2" maxlength="15" 
+        pattern="text" required size="70" autofocus inputmode="text">
+
+        <p>Votre score : <span id="afficherScore">0</span></p>
+        <p>Mot à la minute : <span id="MotsALaMinute">0</span></p>
+        <p>Temps de frappe au clavier : <span id="TempsEcoule">0</span> secondes</p>
+        
+
+        <p> <span id="moyenneHumaine">Vous êtes de 0% superieur à la moyenne humaine.</span> </p>
+        <p> <span id="pourcentage"></span></p>
+
+        <button onclick="reinitialiser()">Réinitialiser</button>
+
+        <script src="generer_MotsOrPhrase.js"></script>
+        <script src="sript.js"></script>
+        
+    </body>
+</html>
